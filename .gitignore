@@ -1,0 +1,30 @@
+# --- Oxygen XML Editor ---
+*.xpr.bak
+*.bak
+oxygen-temp/
+.com.oxygenxml*
+*~
+
+# --- DITA-OT build output & temp ---
+output/
+temp/
+out/
+*.log
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# --- Windows ---
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Editor cruft ---
+*.swp
+*.swo
+.vscode/
+.idea/
