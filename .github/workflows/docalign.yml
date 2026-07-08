@@ -1,0 +1,26 @@
+#DocAlign - checks docs against code on every pull request
+name: DocAlign Documentation Check
+
+#Run when a PR is opened or updated
+on:
+  pull_request:
+        types: [opened, synchronize]
+
+jobs:
+  docalign:
+      runs-on: ubuntu-latest
+      steps:
+         # Load the repo's code onto the runner
+         - name: Check out the repository
+           uses: actions/checkout@v4
+
+         # Placeholder for DocAlign analysis (fictional product)
+         - name: Run DocAlign
+           run: |
+             echo "DocAlign would analyze documentation here."
+             echo "Checking source code, OpenAPI specs, DITA, and Markdown..."
+             echo "No drift detected. (placeholder run)"
+           
+
+          
+        
