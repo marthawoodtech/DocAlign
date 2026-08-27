@@ -3,8 +3,9 @@
 ## Overview
 DocAlign is a documentation intelligence tool designed to allow teams to discover any gaps, known as *drift*, between their code and associated documentation and to fix them, preventing confusion for internal stakeholders and external customers. DocAlign runs inside the pipeline, either as a GitHub Action or as a stage in a Jenkinsfile. A pull request (PR) triggers DocAlign, which analyzes documentation against code and posts the findings as a single consolidated comment on the pull request, each with a severity level and suggested fix.
 
-Figure 1. DocAlign Accept/Reject/Revise Workflow
-￼
+*Figure 1. DocAlign Accept/Reject/Revise Workflow*
+
+![DocAlign workflow diagram](images/workflow.png)
 
 ### The PR Comment
 The PR comment consolidates the drift findings DocAlign detected when it compared your documentation against your code. Each finding is a single instance of drift—a place where code and documentation differ. For each finding, DocAlign indicates the drift's severity level, its location, and a suggested fix. The severity level — Critical, Major, or Minor — signals how significant the drift is: Critical means the documentation directly contradicts the code; Major means the documentation is incomplete or missing for a change; Minor is informational.
