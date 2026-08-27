@@ -41,12 +41,10 @@ jobs:
           config: docalign.config.yaml
         env:
           DOCALIGN_TOKEN: ${{ secrets.DOCALIGN_TOKEN }}
-``` 
-
-2. To set up the Docalign API token, follow these steps:
-3. Obtain a token with read access to your code and write access to pull requests and issues. For token setup details, see the *DocAlign API Reference Guide*.
-4. Store it as a GitHub secret. In the repository go to Settings > Secrets and variables > Actions, and add a new repository secret named DOCALIGN_TOKEN with the token as its value.
-5. Reference it in the workflow with ${{ secrets.DOCALIGN_TOKEN }}, as shown.
+```
+2. To set up the DocAlign API token, obtain a token with read access to your code and write access to pull requests and issues. For token setup details, see the *DocAlign API Reference Guide*.
+3. Store it as a GitHub secret. In the repository go to Settings > Secrets and variables > Actions, and add a new repository secret named DOCALIGN_TOKEN with the token as its value.
+4. Reference it in the workflow with ${{ secrets.DOCALIGN_TOKEN }}, as shown.
 
 Caution: Never paste your token directly into the code. Instead, use a GitHub secret for DocAlign's authentication.
 
@@ -143,30 +141,25 @@ After DocAlign posts findings on the pull request, you review each one and choos
 The following table contains common issues and their fixes. For more information, see *DocAlign Configuration Reference Guide*.
 
 | Issue | Cause(s) | Fix |
-| : ——| ———— | ——|
+|:---| --- | --- |
 | No comment appears on the pull request. | The pipeline didn’t run (workflow file misplaced or misnamed, or the PR didn’t trigger it); the pipeline ran but the DocAlign step failed (check the step’s logs); or authentication failed (token missing/invalid so DocAlign couldn’t post). | 1. Confirm that the pipeline ran. 2. Check DocAlign’s step’s logs. 3. Verify the token.|
-| : ——| ———— | ——|
 | Authentication or permission errors (often a 401 or 403 error). | The token may be missing, expired, or lacking required permissions (read code, write PRs/issues), or the secret/credential name not matching what the pipeline references.| Verify the secret/credential exists, the name matches and the token has the right scopes. |
-| : ——| ———— | —— |
 | DocAlign runs but reports no findings (which were expected). | source_paths/doc_paths may be misconfigured so DocAlign is looking in the wrong directories. | Check that the path patterns match your actual repo structure. |
-| : ——| ———— | —— |
 | The pipeline fails or the DocAlign step errors out. | The config file may be missing or may have malformed YAML. The DocAlign plugin may not be installed (for Jenkins). Or there may be a version mismatch. | Confirm docalign.config.yaml exists at the repo root and is valid YAML. Confirm the plugin is installed (for Jenkins). |
-| : ——| ———— | —— |
 | Too many findings/noise. | source_paths/doc_paths is too broad so DocAlign analyzes files you don’t need checked. | See *DocAlign Configuration Reference Guide*. |
-| : ——| ———— | —— |
-| Merge blocked unexpectedly. | A Critical finding blocking merge per the severity default. | Address the Critical drift DocAlign flagged. For more information about acting on findings, see *DocAlign Accept/Reject/Revise Workflow Guide*.
-If you don’t want Critical findings to block merges, adjust severity_thresholds. For more information, see *DocAlign Configuration Reference Guide*. |
+| Merge blocked unexpectedly. | A Critical finding blocking merge per the severity default. | Address the Critical drift DocAlign flagged. For more information about acting on findings, see *DocAlign Accept/Reject/Revise Workflow Guide*. If you don’t want Critical findings to block merges, adjust severity_thresholds. For more information, see *DocAlign Configuration Reference Guide*. |
+
 
 ## For More Information
 
 For additional information, see the following DocAlign guides:
 
-*DocAlign Integration Guide for GitHub*
-*DocAlign Integration Guide for Jenkins*
-*DocAlign API Reference Guide*
-*DocAlign Configuration Reference Guide*
-*DocAlign Accept/Reject/Revise Workflow Guide*
-*Release Notes for DocAlign 1.0*
+*DocAlign Integration Guide for GitHub* <br>
+*DocAlign Integration Guide for Jenkins* <br>
+*DocAlign API Reference Guide* <br>
+*DocAlign Configuration Reference Guide* <br>
+*DocAlign Accept/Reject/Revise Workflow Guide* <br>
+*Release Notes for DocAlign 1.0* <br>
 
 
 
