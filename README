@@ -1,7 +1,8 @@
-# DocAlign 1.0
-Documentation portfolio project by Martha Wood.
-AI-powered documentation intelligence for CI/CD pipelines.
-Product by Covalent Technologies.
-DocAlign and Covalent Technologies are fictional. 
-This is a documentation portfolio project created by Martha Wood to demonstrate technical writing, DITA architecture, and docs-as-code practices. 
+DocAlign
+A documentation portfolio project by Martha Wood
+DocAlign is a self-directed portfolio project expploring how documentation can be kept reliable, accurate, and maintainable through automated, AI-assisted analysis integratedf into CI/CD pipelines, bringing a "code-quality" mindset to technical documentation.
+
+DocAlign and its parent company, Covalent Technologies, are fictional. 
+
+This project was created to demonstrate technical writing, documentation design, and docs-as-code practices. 
 Any resemblance to real companies or products is coincidental.
