@@ -23,7 +23,7 @@ This repository contains documentation deliverables for DocAlign, authored in a 
 - [Getting Started with DocAlign](docs/getting-started.md)—onboarding and first-use documentation
 - [DocAlign Accept/Reject/Revise Workflow Guide](docs/workflow.md)—how DocAlign, running inside the pipeline, handles findings after writer review and action
   
-Supporting design and planning artifacts including user personas, architecture blueprints, and a configuration reference were developed with AI to inform the documentation, reflecting an end-to-end approach from audience analysis through technical reference.
+Supporting design and planning artifacts including [user personas](docs/design/personas.pdf), [architecture blueprints](docs/design/architecture.pdf), and a [configuration reference](docs/design/configuration.pdf) were developed with AI to inform the documentation, reflecting an end-to-end approach from audience analysis through technical reference.
 
 Note: This is an evolving portfolio project. Additional guides and reference materials are in development.
 
