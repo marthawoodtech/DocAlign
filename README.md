@@ -9,10 +9,10 @@ DocAlign and its parent company, Covalent Technologies, are fictional. This proj
 
 Just as code-quality tools detect issues in source code—flagging problems, assigning severity levels, and guiding remediation before code ships—DocAlign is designed to detect documentation *drift*, the misalignment that occurs when documentation differs from the code, APIs, and specifications it describes. DocAlign's pipeline mirrors the analyze-and-remediate workflow used by modern development tools:
 
-- Collector pulls source artifacts (code, specs, existing docs) when a pull request is opened.
-- Analyzer compares documentation against current source to detect drift.
-- Reporter posts findings as pull request comments with severity levels and recommended fixes.
-- Remediator applies approved corrections.
+- *Collector* pulls source artifacts (code, specs, existing docs) when a pull request is opened.
+- *Analyzer* compares documentation against current source to detect drift.
+- *Reporter* posts findings as pull request comments with severity levels and recommended fixes.
+- *Remediator* applies approved corrections.
   
 This project demonstrates fluency with the concepts and workflows of the modern developer ecosystem: CI/CD pipelines, review based on pull requests, severity and remediation models, false-positive handling, and AI-assisted documentation.
 
