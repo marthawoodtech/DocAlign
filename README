@@ -1,4 +1,6 @@
+
 # DocAlign
+
 A documentation portfolio project by Martha Wood
 DocAlign is a self-directed portfolio project exploring how documentation can be kept reliable, accurate, and maintainable through automated, AI-assisted analysis integrated into CI/CD pipelines, bringing a code-quality mindset to technical documentation.
 
@@ -12,6 +14,7 @@ Remediator--applies approved corrections.
 This project demonstrates fluency with the concepts and workflows of the modern developer ecosystem: CI/CD pipelines, review based on pull requests, severity and remediation models, false-positive handling, and AI-assisted documentation.
 
 ## What's Here
+
 This repository contains documentation deliverables for DocAlign, authored in a docs-as-code (Markdown) workflow:
 [Getting Started with DocAlign](docs/getting-started.md)--onboarding and first-use documentation
 [DocAlign Accept/Reject/Revise Workflow Guide](docs/workflow.md)--how DocAlign, running inside the pipeline, handles findings after writer review and action
@@ -19,6 +22,7 @@ Supporting design and planning artifacts including user personas, architecture b
 Note: This is an evolving portfolio project. Additional guides and reference materials are in development.
 
 ## Skills Demonstrated
+
 Technical writing and clear communication of complex technical concepts
 Docs-as-code practices (Git, Markdown, pull-request-based workflows)
 Audience analysis and persona-based documentation design
